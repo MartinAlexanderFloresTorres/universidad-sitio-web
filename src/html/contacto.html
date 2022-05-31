@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+
+    <!--===== css =====-->
+    <link rel="stylesheet" href="../css/contacto.css">
+    <!--===== preload images =====-->
+    <link rel="preload" href="../img/background.webp" as="image">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!--===== header se rellena con scripting =====-->
+    <header></header>
+    
+    <!--===== inicio =====-->
+    <section class="inicio">
+        <div class="texto">
+            <h1 class="texto__titulo">Contactenos</h1>
+        </div>
+    </section>
+
+    <!--===== contenedor principal =====-->
+    <main class="max-width">
+        <section class="locacion">
+            <iframe class="locacion__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63575.062931122855!2d-80.7018260180914!3d-5.1930847852952295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a107c793c39b7%3A0x1de8948d1c01fe28!2sPiura!5e0!3m2!1ses!2spe!4v1653866119939!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contacto">
+            <!--===== columna =====-->
+            <div class="contacto__locacion">
+                <!--===== item =====-->
+                <div class="contacto__item">
+                    <span class="contacto__icono"><i class='bx bx-home' ></i></span>
+                    <div class="contacto__texto">
+                        <p class="contacto__titulo">Locacion 200 Peru</p>
+                        <p class="contacto__parrafo">Peru from and 301</p>
+                    </div>
+                </div>
+                <!--===== item =====-->
+                <div class="contacto__item">
+                    <span class="contacto__icono"><i class='bx bx-phone'></i></span>
+                    <div class="contacto__texto">
+                        <p class="contacto__titulo">+10 01012279</p>
+                        <p class="contacto__parrafo">Lunes a Sabado de 8AM - 3PM</p>
+                    </div>
+                </div>
+                <!--===== item =====-->
+                <div class="contacto__item">
+                    <span class="contacto__icono"><i class='bx bxl-gmail'></i></span>
+                    <div class="contacto__texto">
+                        <p class="contacto__titulo">info@gmail.com</p>
+                        <p class="contacto__parrafo">Email de contacto</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--===== columna =====-->
+            <div>
+                <form class="f-form">
+                    <label class="f-label" for="nombre">Nombre</label>
+                    <input class="f-input" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+
+                    <label class="f-label" for="email">email</label>
+                    <input class="f-input" type="email" id="email" name="email" placeholder="Ingrese su email">
+
+                    <label class="f-label" for="tema">tema</label>
+                    <input class="f-input" type="text" id="tema" name="tema" placeholder="Ingrese su tema">
+
+                    <label class="f-label" for="mensaje">mensaje</label>
+                    <textarea class="f-input"  id="mensaje" name="mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
+
+                    <div class="f-boton">
+                        <button type="submit" class="boton-secundario">Enviar</button>
+                    </div>
+               </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== footer =====-->
+    <footer></footer>
+    <!--===== js =====-->
+    <script src="../js/contacto.js" type="module"></script>
+</body>
+</html>

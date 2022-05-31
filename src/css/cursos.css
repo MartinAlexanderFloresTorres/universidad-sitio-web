@@ -1,0 +1,17 @@
+@import url("./global.css");
+@import url("./utilidades/u-cursos.css");
+/*===== inicio ===== */
+.inicio {
+    min-height: 400px;
+    background-image: linear-gradient(var(--rgba-oscuro), var(--rgba-oscuro)),
+        url("../img/background.webp");
+    padding-top: 190px;
+}
+.inicio .texto__titulo {
+    font-size: 30px;
+}
+/*===== cursos ===== */
+.cursos-img {
+    width: 100%;
+    height: 300px;
+}

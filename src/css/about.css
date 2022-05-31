@@ -1,0 +1,32 @@
+@import url("./global.css");
+/*===== inicio ===== */
+.inicio {
+    min-height: 400px;
+    background-image: linear-gradient(var(--rgba-oscuro), var(--rgba-oscuro)),
+        url("../img/background.webp");
+    padding-top: 190px;
+}
+/*===== about ===== */
+.about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 80px 0;
+}
+.about .texto__titulo {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.about .boton-secundario{
+    margin-top: 25px;
+}
+@media (max-width: 900px) {
+    .about {
+        display: block;
+        margin: 50px 0;
+    }
+    .about__contenido {
+        margin-bottom: 50px;
+    }
+}

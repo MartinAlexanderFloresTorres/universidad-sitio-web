@@ -1,0 +1,102 @@
+/*===== cursos ===== */
+.cursos{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 90px;
+}
+.cursos-contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.cursos-item {
+    width: 100%;
+    height: 100%;
+    background: var(--primario-all);
+    box-shadow: 0 0 10px 1px var(--shadow-all);
+}
+.cursos-item .titulo{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.cursos-img{
+    width: 100%;
+}
+.cursos-info{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    transition: var(--transition-03s);
+}
+.cursos-icono {
+    display: inline-block;
+    font-size: 40px;
+    margin: 20px 0;
+}
+/*===== facilidades==== */
+.facilidades{
+    width: 100%;
+    margin-bottom: 90px;
+}
+.facilidades-contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.facilidades-img {
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px var(--shadow-all);
+}
+.facilidades-titulo {
+    text-transform: capitalize;
+    margin: 20px 0 10px;
+    font-weight: 500;
+}
+@media (max-width: 980px) {
+    .cursos-contenedor,
+    .facilidades-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cursos-item:last-child,
+    .campus__item:last-child {
+        grid-column: 1/-1;
+    }
+    .campus__item:last-child {
+        height: 400px;
+    }
+}
+@media (max-width: 780px) {
+    .texto__titulo {
+        font-size: 25px;
+    }
+    .texto__parrafo {
+        font-size: 15px;
+    }
+    .campus__item {
+        height: 400px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .testimonios__item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .inicio .texto__titulo {
+        font-size: 36px;
+    }
+}
+@media (max-width: 580px) {
+    .cursos-contenedor,
+    .facilidades-contenedor {
+        display: block;
+    }
+    .cursos-item,
+    .facilidades-item {
+        margin-bottom: 50px;
+    }
+}

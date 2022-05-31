@@ -1,0 +1,69 @@
+@import url("./global.css");
+@import url("./utilidades/formulario.css");
+/*===== inicio ===== */
+.inicio {
+    min-height: 400px;
+    background-image: linear-gradient(var(--rgba-oscuro), var(--rgba-oscuro)),
+        url("../img/background.webp");
+    padding-top: 190px;
+}
+.inicio .texto__titulo {
+    font-size: 30px;
+}
+/*===== locacion ===== */
+.locacion,
+.locacion__map {
+    width: 100%;
+}
+/*===== contacto ===== */
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 150px 0 50px;
+}
+.contacto__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.contacto__icono {
+    font-size: 30px;
+    color: var(--primario);
+}
+
+.contacto__texto {
+    width: 100%;
+}
+.contacto__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+.contacto__parrafo {
+    font-size: 14px;
+}
+@media (max-width: 780px) {
+    .locacion__map{
+        height: 250px;
+    }
+}
+@media (max-width: 680px) {
+    .contacto {
+        display: block;
+        margin: 50px 0;
+    }
+    .contacto__locacion {
+        margin-bottom: 50px;
+    }
+    .boton-secundario {
+        width: 100%;
+    }
+    .contacto__item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+}
